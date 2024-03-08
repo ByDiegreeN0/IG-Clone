@@ -19,6 +19,9 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            
+            $table->integer('user_post');
+            $table->foreign('user_post')->references('post_id')->on('posts');
         });
     }
 
