@@ -1,12 +1,14 @@
-import './App.css'
-import loginForm from './components/forms/loginForm'
-import registerForm from './components/forms/registerForm' 
+import LoginForm from './components/forms/loginForm'
+import RegisterForm from './components/forms/registerForm'
 
 function App() {
 
   return (
     <>
+        
+        <LoginForm />
     </>
+    
   )
 }
 

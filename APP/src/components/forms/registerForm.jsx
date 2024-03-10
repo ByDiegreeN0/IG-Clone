@@ -1,34 +1,66 @@
-import React from 'react'
-import '../../css/forms/registerForm'
+import React from 'react';
+
+import Formfooter from '../footer/LoginFormFooter'
 
 
-const registerForm = () => {
+import '../../css/forms/loginForm.css';
+import '../../css/global/globalStyles.css'
+
+const RegisterForm = () => {
   return (
-    <section className="register-form">
+    <div className="loginform-main">
+      <section className="loginForm-container">
 
-      <h1>Instagram</h1>
-      <p>Registrate para ver las fotos y videos de tus amigos</p>
+        <div className="loginForm-form">
 
-      <form action="" className="register-form">
+          <div className="loginForm-container">
 
-        <button className='register-form-fb-btn'><a href="">Iniciar Sesion con Facebook</a></button>
+            <form action="">
+              <h1 className='loginForm-tittle'>IG-Clone</h1>
+              <h3 className='loginForm-h3'>Registrate para ver fotos y videos de tus amigos</h3>
 
-        
-        <input type="email" name="email" id="" placeholder='email' required/>
-        <input type="text" name="fullname" id="" placeholder='Nombre completo' required />
-        <input type="text" name="username" id="" placeholder='Nombre de usuario' required/>
-        <input type="password" name="password" id="" placeholder='Contraseña' required/>
+              <div className="register-button-container">
 
-        <p>Es posible que los usuarios de nuestro servicio hayan subido tu información de contacto en Instagram. <a className='link' href="">Mas Informacion</a></p>
-        <p>Al registrarte, aceptas nuestras <a className='link' href="">Condiciones</a>, nuestra <a className='link' href="">Política de privacidad</a> y nuestra Política de <a  className='link' href="">Cookies.</a></p>
+                <a href=""><button className='btn register-btn'>Iniciar Sesión con Facebook</button></a>
 
-        <input type="submit" value="Registrarse" />
+              </div>
 
-       
-      </form>
+              <label htmlFor="name">
+                <input className='loginForm-control' type="text" name="name" id="" placeholder='Telefono, usuario o correo electronico' />
+              </label>
 
-    </section>
+              <label htmlFor="fullname">
+                <input className='loginForm-control' type="text" name="fullname" id="" placeholder='Nombre completo' />
+              </label>
+
+              <label htmlFor="username">
+                <input className='loginForm-control' type="text" name="username" id="" placeholder='Nombre de usuario' />
+              </label>
+
+              <label htmlFor="password">
+                <input className='loginForm-control' type="password" name="password" id="" placeholder='Contraseña' />
+              </label>
+
+              <p className='form-paragraph' >Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a Instagram. <a href="" className='link-fb'>Mas información</a></p>
+              <p className='form-paragraph' >Al registrarte, aceptas nuestras <a href="" className='link-fb'>Condiciones</a>, la <a href="" className='link-fb'>Política de privacidad</a> y la <a href="" className='link-fb'>Política de cookies.</a></p>
+              <input type="submit" className='loginForm-form-btn btn' value="Registrarse" />
+
+
+            </form>
+
+          </div>
+
+          <div className="register-button">
+            <p className='register-button-p'>¿Tienes una cuenta? <a className='link' href="">Inicia Sesion</a></p>
+          </div>
+
+        </div>
+
+      </section>
+      <Formfooter />
+
+    </div>
   )
 }
 
-export default registerForm
+export default RegisterForm;

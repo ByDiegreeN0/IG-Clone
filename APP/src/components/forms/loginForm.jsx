@@ -1,40 +1,60 @@
 import React from 'react'
-import '../../css/forms/loginForm'
+import Formfooter from '../footer/LoginFormFooter'
 
-const loginForm = () => {
-  return (
-    <section className="loginForm-container">
+import '../../css/forms/loginForm.css'
+import '../../css/global/globalStyles.css'
+import IgCloneIMG from '../../assets/img/loginForm/Main.jpg'
 
-        <div className="loginForm-img">
-            <img src="" alt="" />
+
+const LoginForm = () => {
+    return (
+        <div className="loginform-main">
+            <section className="loginForm-container">
+
+
+
+                <div className="loginForm-img">
+                    <img src={IgCloneIMG} alt="" />
+                </div>
+
+                <div className="loginForm-form">
+
+                    <div className="loginForm-container">
+
+                        <form action="">
+                            <h1 className='loginForm-tittle'>IG-Clone</h1>
+
+                            <label htmlFor="name">
+                                <input className='loginForm-control' type="text" name="name" id="" placeholder='Telefono, usuario o correo electronico' />
+                            </label>
+
+                            <label htmlFor="password">
+                                <input className='loginForm-control' type="password" name="password" id="" placeholder='Contraseña' />
+                            </label>
+
+                            <input type="submit" className='loginForm-form-btn btn' value="Iniciar Sesión" />
+
+                            <p className='loginForm-delimiter' >o</p>
+
+                            <p className='loginForm-link'><a href="" className='link-fb'>Iniciar Sesion con Facebook</a></p>
+                            <p className='password-link'><a className='link' href=''>¿Olvidaste tu contraseña?</a></p>
+                        </form>
+
+                    </div>
+
+                    <div className="register-button">
+                        <p className='register-button-p'>¿No tienes una cuenta? <a className='link' href="">Registrate</a></p>
+                    </div>
+                </div>
+
+                
+
+
+            </section>
+
+            <Formfooter />
         </div>
-
-        <div className="loginForm-form">
-            <form action="">
-                <h1>Instagram</h1>
-
-                <label htmlFor="name">
-                    <input type="text" name="name" id="" placeholder='Telefono, usuario o correo electronico' />
-                </label>
-
-                <label htmlFor="password">
-                    <input type="password" name="password" id="" placeholder='Contraseña' />
-                </label>
-
-                <input type="submit" value="Entrar" />
-
-                <span>o</span>
-
-                <p>Inicia sesion fb **</p>
-            </form>
-        </div>
-
-        <div className="register-button">
-            <p className='register-button-p'>¿No tienes una cuenta? <a className='register-button-link' href="">Registrate</a></p>
-        </div>
-        
-    </section>
-  )
+    )
 }
 
-export default loginForm
+export default LoginForm

@@ -1,3 +1,116 @@
-* {
-    border: 1px solid blue;
+
+hr {
+    margin: 1rem 0;
+}
+.loginForm-container {
+    margin: auto;
+    width: 100%;
+}
+
+.loginForm-img {
+    margin: 0 2rem;
+}
+
+.loginForm-img img {
+    width: 100%;
+}
+
+.loginForm-form {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    
+}
+
+.loginForm-tittle {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 35px;
+}
+
+.loginForm-h3 {
+    text-align: center;
+    font-size: 16px;
+    margin: 2rem;
+}
+
+.loginForm-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.loginForm-control {
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 8px;
+    background-color: #FAFAFA;
+    border: 1px solid #ddd;
+
+}
+
+
+.register-button {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.register-button p{
+    padding: 1rem;
+}
+
+.loginForm-link {
+    text-align: center;
+}
+
+.loginForm-delimiter {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.password-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.loginForm-form-btn {
+    width: 100%;
+    height: 30px;
+
+}
+
+
+.form-paragraph {
+    font-size: 12px;
+    text-align: center;
+    padding: .5rem;
+    margin: .2rem;
+}
+
+
+.register-button-container {
+    text-align: center;
+    margin: 1rem;
+}
+
+.register-btn {
+    height: 35px;
+    width: 100%;
+}
+
+@media (max-width: 875px){
+
+    .loginForm-img {
+        display: none;
+    }
 }

@@ -1,0 +1,20 @@
+.form-footer-links {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: #737373;
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+
+}
+
+.footer-link:hover {
+    border-bottom: 1px solid #737373;
+}
