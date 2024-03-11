@@ -1,0 +1,42 @@
+
+.main-box {
+    display: grid;
+    grid-template-columns: 250px 700px auto;
+}
+
+.aside-nav-container {
+    width: 250px;
+}
+
+.aside-nav {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    border: 1px solid #ddd;
+    position: fixed;
+    background-color: #fff;
+}
+
+.aside-nav-tittle {
+    font-size: 32px;
+    padding: 2rem;
+}
+
+.aside-nav-ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-nav-ul .aside-nav-li {
+    padding: 1rem;
+}
+
+.aside-nav-ul .aside-nav-li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+.post {
+    margin: 0 auto;
+}

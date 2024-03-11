@@ -1,0 +1,19 @@
+.stories-container {
+    padding: 1rem;
+    display: flex;
+}
+
+.stories-box {
+    margin: 0 .8rem;
+    cursor: pointer;
+}
+
+.stories-img-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.stories-user-data p {
+    font-size: 10px;
+}
