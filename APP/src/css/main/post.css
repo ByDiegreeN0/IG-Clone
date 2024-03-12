@@ -51,6 +51,16 @@
     padding: .5rem 0;
 }
 
+.footer-top-btn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.footer-top-btn:hover {
+    color: #8E8E8E;
+}
+
 .footer-top-social-icons a {
     padding: .2rem;
 }

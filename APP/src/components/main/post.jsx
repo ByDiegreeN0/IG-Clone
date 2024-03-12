@@ -1,6 +1,11 @@
 import React from "react";
 import "../../css/main/post.css";
 
+// ICONS
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 const Post = () => {
   return (
     <div className="post-card-container">
@@ -25,7 +30,7 @@ const Post = () => {
           </div>
 
           <div className="post-burger">
-            <button>test</button>
+            <button className="footer-top-btn">< FontAwesomeIcon icon="bars" className="custom-icon" /></button>
           </div>
         </div>
 
@@ -39,18 +44,18 @@ const Post = () => {
         <div className="post-footer">
           <div className="post-footer-top">
             <div className="footer-top-social-icons">
-              <a href=""><button className="footer-top-btn">Icon 1</button></a>
-              <a href=""><button className="footer-top-btn">Icon 2</button></a>
-              <a href=""><button className="footer-top-btn">Icon 3</button></a>
+              <a href=""><button className="footer-top-btn">< FontAwesomeIcon icon="heart" className="custom-icon" /></button></a>
+              <a href=""><button className="footer-top-btn">< FontAwesomeIcon icon="comment" className="custom-icon" /></button></a>
+              <a href=""><button className="footer-top-btn">< FontAwesomeIcon icon="share" className="custom-icon" /></button></a>
             </div>
 
             <div className="footer-top-save-btn">
-              <a href=""><button  className="footer-top-btn">Save</button></a>
+              <a href=""><button  className="footer-top-btn">< FontAwesomeIcon icon="bookmark" className="custom-icon" /></button></a>
             </div>
           </div>
 
           <div className="post-footer-bottom">
-            <p>3000</p>
+            <p>3000 me gusta</p>
             <p>
               <b>USERNAME</b> Lorem ipsum dolor sit amet consectetur,
               adipisicing elit. Molestiae error itaque, ex natus aliquid
