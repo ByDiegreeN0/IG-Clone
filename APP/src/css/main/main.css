@@ -1,23 +1,23 @@
 
 .main-box {
     display: grid;
-    grid-template-columns: 250px 700px 300px;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .aside-nav-container {
-    width: 250px;
+    width: 100%;
 }
 
 .aside-nav {
     display: flex;
     flex-direction: column;
-    width: 250px;
     height: 100vh;
     border: 1px solid #ddd;
     position: fixed;
     background-color: #fff;
     justify-content: space-between;
 }
+
 
 
 .custom-icon {
@@ -71,15 +71,20 @@
 }
 
 
-.ul-secondary {
-    display: flex;
-}
+@media screen and (max-width: 977px) {
+   
+    .post {
+      
+        margin-top: 5rem;
+    }
+    
+    .aside-nav {
+        
+        display: none;
+    }
 
-.aside-nav-li-secondary {
-    display: flex;
-    border: 1px solid blue;
-}
-
-.post {
-    margin: 0 auto;
+    .right-aside {
+        display: none;
+    }
+   
 }

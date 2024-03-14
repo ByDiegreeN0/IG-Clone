@@ -3,17 +3,27 @@ import React from "react";
 // ICONS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// css
+import '../../css/main/main.css'
+
 
 import Post from "./post";
 import Stories from "./stories";
 import ProfileLink from "./profile/ProfileLink";
 
-import '../../css/main/main.css'
+// Responsive
+
+import ResponsiveBottomNav from "../nav/ResponsiveBottomNav";
+import ResponsiveTopNav from "../nav/ResponsiveTopNav";
+
 
 
 const Main = () => {
   return (
     <section className="main-box">
+
+      <ResponsiveTopNav />
+
       <aside className="aside-nav-container">
         <nav className="aside-nav">
           <h1 className="aside-nav-tittle">IG-Clone</h1>
@@ -44,14 +54,18 @@ const Main = () => {
               <a className="aside-nav-link" href="">< FontAwesomeIcon icon="user" className="custom-icon" />Perfil</a>
             </li>
           </ul>
-          
+
           <div className="aside-nav-ul">
-          <li className="aside-nav-li">
+            <li className="aside-nav-li">
               <a className="aside-nav-link" href="">< FontAwesomeIcon icon="bars" className="custom-icon" />Mas</a>
             </li>
           </div>
 
         </nav>
+
+
+        <ResponsiveBottomNav />       
+
       </aside>
 
       <section className="post">

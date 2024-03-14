@@ -1,0 +1,40 @@
+.responsive-top {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 15px #000;
+}
+
+
+.responsive-top ul li {
+    list-style: none;
+}
+
+.responsive-top ul li a {
+    color: #000;
+}
+
+.responsive-top-icon ul {
+    display: flex;
+    padding: 1rem;
+}
+
+.responsive-top-tittle {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 977px) {
+   
+    .responsive-top {
+        display: flex;
+    }
+
+   
+}

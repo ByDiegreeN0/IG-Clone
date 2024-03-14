@@ -1,0 +1,35 @@
+.responsive-nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: none;
+}
+
+.responsive-nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+.responsive-nav-ul li {
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+.responsive-nav-ul li a {
+    color: #000;
+}
+
+
+
+@media screen and (max-width: 977px) {
+
+    .responsive-nav {
+        display: block;
+    }
+
+
+   
+}
