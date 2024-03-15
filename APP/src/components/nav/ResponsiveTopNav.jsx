@@ -16,7 +16,7 @@ const ResponsiveTopNav = () => {
       <ul>
 
         <li><a href="">< FontAwesomeIcon icon="heart" className="custom-icon" /></a></li>
-        <li><a href="">< FontAwesomeIcon icon="heart" className="custom-icon" /></a></li>
+        <li><a href="">< FontAwesomeIcon icon={['fab', 'facebook-messenger']}  className="custom-icon" /></a></li>
       </ul>
     </div>
   </div>

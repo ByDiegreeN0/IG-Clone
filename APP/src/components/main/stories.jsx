@@ -93,7 +93,9 @@ const Stories = () => {
           <p>USERNAME</p>
         </div>
 
-      </div>
+      </div> 
+
+      
 
     </section>
   );
