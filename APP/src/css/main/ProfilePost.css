@@ -1,0 +1,38 @@
+
+
+
+.profile-uploads {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    cursor: pointer;
+
+}
+
+.profile-uploads-content {
+    width: 330px;
+    height: 330px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.profile-uploads-content img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 977px) {
+
+    .profile-uploads {
+        margin-top: 1rem;
+    }
+
+    .profile-uploads-content {
+        width: 150px;
+        height: 150px;
+        margin: 4px;
+    }
+    
+}

@@ -10,7 +10,7 @@ const MainNav = () => {
   return (
     <aside className="aside-nav-container">
         <nav className="aside-nav">
-          <h1 className="aside-nav-tittle">IG-Clone</h1>
+          <h1 className="aside-nav-tittle">Instagram</h1>
 
           <ul className="aside-nav-ul">
             <li className="aside-nav-li">
