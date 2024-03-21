@@ -18,4 +18,8 @@ class post extends Model
     public function users(){
         return $this->belongsTo(User::class);
     }
+
+    public function post_files(){
+        return $this->hasMany(postFiles::class);
+    }
 }
