@@ -5,14 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class comments extends Model
+class storiesFiles extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'comment_id';
-
-
-    public function users(){
-        return $this->belongsTo(User::class);
+    public function stories(){
+        return $this->belongsTo(stories::class);
     }
 }

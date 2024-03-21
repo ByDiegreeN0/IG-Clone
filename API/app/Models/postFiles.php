@@ -5,14 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class comments extends Model
+class postFiles extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'comment_id';
-
-
-    public function users(){
-        return $this->belongsTo(User::class);
+    public function post(){
+        return $this->belongsTo(post::class);
     }
 }

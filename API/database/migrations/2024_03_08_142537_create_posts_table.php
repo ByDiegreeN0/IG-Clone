@@ -15,12 +15,8 @@ return new class extends Migration
             $table->id('post_id');
             
             $table->string('post_img');
-            $table->string('post_img_2')->nullable();
-            $table->string('post_img_3')->nullable();
-            $table->string('post_img_4')->nullable();
-            $table->string('post_img_5')->nullable();
-
-            $table->string('post_description');
+            $table->string('post_file');
+            $table->string('post_description')->nullable();
             $table->integer('post_likes');
 
             $table->timestamps();
