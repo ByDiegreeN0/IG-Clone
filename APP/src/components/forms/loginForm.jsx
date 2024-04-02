@@ -25,11 +25,11 @@ const LoginForm = () => {
                             <h1 className='loginForm-tittle'>IG-Clone</h1>
 
                             <label htmlFor="name">
-                                <input className='loginForm-control' type="text" name="name" id="" placeholder='Telefono, usuario o correo electronico' />
+                                <input className='loginForm-control' type="text" name="name" id="" required placeholder='correo electronico' />
                             </label>
 
                             <label htmlFor="password">
-                                <input className='loginForm-control' type="password" name="password" id="" placeholder='Contraseña' />
+                                <input className='loginForm-control' type="password" name="password" id="" required placeholder='Contraseña' />
                             </label>
 
                             <input type="submit" className='loginForm-form-btn btn' value="Iniciar Sesión" />
