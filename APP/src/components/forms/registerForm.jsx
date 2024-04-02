@@ -26,19 +26,19 @@ const RegisterForm = () => {
               </div>
 
               <label htmlFor="name">
-                <input className='loginForm-control' type="text" name="name" id="" placeholder='Telefono, usuario o correo electronico' />
+                <input className='loginForm-control' type="text" name="name" id="" required placeholder='Correo electronico' />
               </label>
 
               <label htmlFor="fullname">
-                <input className='loginForm-control' type="text" name="fullname" id="" placeholder='Nombre completo' />
+                <input className='loginForm-control' type="text" name="fullname" id="" required placeholder='Nombre completo' />
               </label>
 
               <label htmlFor="username">
-                <input className='loginForm-control' type="text" name="username" id="" placeholder='Nombre de usuario' />
+                <input className='loginForm-control' type="text" name="username" id="" required placeholder='Nombre de usuario' />
               </label>
 
               <label htmlFor="password">
-                <input className='loginForm-control' type="password" name="password" id="" placeholder='Contraseña' />
+                <input className='loginForm-control' type="password" name="password" id="" required placeholder='Contraseña' />
               </label>
 
               <p className='form-paragraph' >Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a Instagram. <a href="" className='link-fb'>Mas información</a></p>
