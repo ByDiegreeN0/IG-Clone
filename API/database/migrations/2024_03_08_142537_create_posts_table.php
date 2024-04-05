@@ -13,13 +13,14 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id('post_id');
-            
             $table->string('post_img');
-            $table->string('post_file');
             $table->string('post_description')->nullable();
             $table->integer('post_likes');
+            $table->unsignedBigInteger('user_id');
 
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
